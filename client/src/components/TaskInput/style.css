@@ -1,0 +1,12 @@
+.task-input {
+    background-color: var(--clr-primary-main);
+    padding: 1rem;
+    width: min(80%, 30rem);
+    border-radius: 5px;
+}
+
+input {
+    background-color: inherit;
+    border: none;
+    color: var(--clr-secondary-text);
+}
