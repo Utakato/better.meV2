@@ -1,0 +1,11 @@
+.header {
+    background: var(--clr-check);
+    padding: 5%;
+}
+
+h1 {
+    color: var(--light-gray);
+    font-family: var(--ff-primary);
+    letter-spacing: 0.3rem;
+    margin-bottom: 1em;
+}

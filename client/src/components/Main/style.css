@@ -1,0 +1,8 @@
+.main {
+    background-color:var(--clr-primary-bg);
+    padding: 0 5%;
+}
+
+.drag {
+    color: var(--clr-secondary-text);
+}
