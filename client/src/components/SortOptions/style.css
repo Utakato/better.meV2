@@ -1,0 +1,18 @@
+.sort-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--clr-secondary-text);
+    background-color: var(--clr-primary-main);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.sort:hover {
+    color: var(--clr-primary-100);
+    cursor:pointer;
+}

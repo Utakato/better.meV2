@@ -1,0 +1,11 @@
+.dark-mode {
+    cursor: pointer;
+}
+
+.fa-sun {
+    color: var(--clr-primary-100);
+}
+
+.fa-moon {
+    color: var(--clr-primary-100);
+}
