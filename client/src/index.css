@@ -1,4 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+h1,
+h2,
+h3,
 body {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+:root {
+  --clr-check: linear-gradient(25deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --clr-primary-100 : hsl(220, 98%, 61%);
+
+  /* Light theme */
+  
+  /* cards */
+  --light-gray: hsl(0, 0%, 98%);
+  /* bg? */
+  --very-light-gray-bluet: hsl(236, 33%, 92%);
+  /* light secondary text?? */
+  --light-gray-blue : hsl(233, 11%, 84%);
+  /* secondary text */
+  --dark-gray-blue : hsl(236, 9%, 61%);
+  /* text */
+  --very-dark-gray-blue : hsl(235, 19%, 35%); 
+
+
+  /* Dark theme */
+  
+  
+  /* bg */
+  --very-dark-blue: hsl(235, 21%, 11%) ;
+  /* cards */
+  --very-dark-des-blue: hsl(235, 24%, 19%);
+  /* text primary */
+  --dk-light-gray-blue: hsl(234, 39%, 85%);
+  --dk-hover : hsl(236, 33%, 92%);
+  /* text secondary */
+  --dk-dark-gray-blue: hsl(234, 11%, 52%);
+  --dk-very-dark-gray-blue : hsl(233, 14%, 35%);
+  --dk-very-dark-gray-blue2: hsl(237, 14%, 26%);
+ 
+  
+  --ff-primary: 'Josefin Sans', sans-serif;
+
+
+  --clr-primary-bg: var(--very-dark-blue);
+  --clr-primary-main: var(--very-dark-des-blue);
+  --clr-primary-text: var(--dk-light-gray-blue);
+
+  --clr-secondary-text: var(--dk-dark-gray-blue)
+
 }
