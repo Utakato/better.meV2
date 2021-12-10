@@ -1,7 +1,6 @@
 .card { 
     background-color: var(--clr-primary-main);
     padding: 1rem;
-    width: min(80%, 30rem);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--clr-secondary-text);

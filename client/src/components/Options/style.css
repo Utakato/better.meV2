@@ -1,7 +1,6 @@
 .options {
     background-color: var(--clr-primary-main);
     padding: 1.3rem 1rem;
-    width: min(80%, 30rem);
     display: flex;
     justify-content: space-between;
     color: var(--clr-secondary-text);

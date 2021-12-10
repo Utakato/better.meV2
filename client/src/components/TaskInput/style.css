@@ -1,7 +1,10 @@
+.wrapper {
+    width: min(80vw, 512px);
+
+}
 .task-input {
     background-color: var(--clr-primary-main);
     padding: 1rem;
-    width: min(80%, 30rem);
     border-radius: 5px;
 }
 
