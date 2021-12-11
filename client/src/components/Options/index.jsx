@@ -1,8 +1,11 @@
 import "./style.css"
+import { useSelector } from "react-redux"
 const Options = () => {
+    const taskStore = useSelector(state => state.task)
+    const itemsLeft = taskStore.length
     return (
         <div className="options">
-            <div>X items left</div>
+            <div>{itemsLeft} items left</div>
             <div>Clear Completed</div>
         </div>
     )
