@@ -10,7 +10,6 @@ const Task = ({name, completed}) => {
         dispatch(actions.removeTask(name)) // prob change name to id;
     }
     const handleChange = e => {
-        let isChecked = e.target.checked;
         let task = {
             content: name,
             completed: e.target.checked
