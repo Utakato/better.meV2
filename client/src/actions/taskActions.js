@@ -20,6 +20,17 @@ export const removeTask = (name) => (dispatch) => { // prob change name to id;
     }
 }
 
+export const removeTasks = (taskList) => (dispatch) => { // prob change name to id;
+    try {
+        dispatch({
+            type:"removeTasks",
+            payload: taskList
+        })
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
 export const updateTask = (task) => (dispatch) => { // prob change name to id;
     try {
         dispatch({

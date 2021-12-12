@@ -1,12 +1,18 @@
 import "./style.css"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
+import * as actions from "../../actions/taskActions"
 const Options = () => {
+    const dispatch = useDispatch()
     const taskStore = useSelector(state => state.task)
-    const itemsLeft = taskStore.length
+    const tasksLeft = taskStore.length
+    const tasksCompleted = taskStore.filter(task => task.completed && task )
+    const handleClear = () => {
+        dispatch(actions.removeTasks(tasksCompleted))
+    }
     return (
         <div className="options">
-            <div>{itemsLeft} items left</div>
-            <div>Clear Completed</div>
+            <div>{tasksLeft} items left</div>
+            <div onClick={handleClear}>Clear Completed</div>
         </div>
     )
 }
