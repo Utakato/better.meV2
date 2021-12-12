@@ -24,7 +24,7 @@ const TaskInput = () => {
         <div className="wrapper">
             <div className="task-input">
                 <input type="checkbox"></input>
-                <input type="text" onChange={handleChange} onKeyDown={handleEnter}placeholder="Create a new task.." />
+                <input type="text" value={text} onChange={handleChange} onKeyDown={handleEnter} placeholder="Create a new task.." />
             </div>
         </div>
     )
