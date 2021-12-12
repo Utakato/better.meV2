@@ -12,7 +12,7 @@ const Options = () => {
     return (
         <div className="options">
             <div>{tasksLeft} items left</div>
-            <div onClick={handleClear}>Clear Completed</div>
+            <div className ="clickable" onClick={handleClear}>Clear Completed</div>
         </div>
     )
 }
