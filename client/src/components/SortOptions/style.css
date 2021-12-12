@@ -13,6 +13,10 @@
 }
 
 .sort:hover {
-    color: var(--clr-primary-100);
+    color: var(--clr-primary-text);
     cursor:pointer;
+}
+
+.sort.selected {
+    color: var(--clr-primary-100);
 }

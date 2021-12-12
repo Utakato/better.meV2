@@ -33,7 +33,8 @@
     color: var(--clr-secondary-text);
 }
 
-.clickable {
+.clickable:hover {
     cursor:pointer;
+    color: var(--clr-primary-text)
 }
 
