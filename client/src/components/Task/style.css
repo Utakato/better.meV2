@@ -25,4 +25,12 @@
     background-color: inherit;
     color: var(--clr-secondary-text);
     border: none;
+    cursor: pointer;
 }
+
+.card.completed div {
+    text-decoration: line-through;
+    color: var(--clr-secondary-text);
+}
+
+

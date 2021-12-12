@@ -20,9 +20,20 @@ const taskReducer = (state=defTaskState, action) => {
         }
 
         case "removeTask": {
-            const newState = [...state]
             return state.filter(task => task.content !== action.payload)
 
+        }
+        
+        case "updateTask": {
+            return state.map(task => {
+                if (task.content !== action.payload.content){
+                    return task
+                }
+                return {...task,
+                    content: action.payload.content, 
+                    completed: action.payload.completed
+                }
+            })
         }
 
         default : return state

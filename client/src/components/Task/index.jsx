@@ -9,13 +9,22 @@ const Task = ({name, completed}) => {
     const handleDeleteClick = () => {
         dispatch(actions.removeTask(name)) // prob change name to id;
     }
-    
+    const handleChange = e => {
+        let isChecked = e.target.checked;
+        let task = {
+            content: name,
+            completed: e.target.checked
+        }
+        dispatch(actions.updateTask(task))
+
+    }
+
     return (
-        <div className="card"
+        <div className={completed ? "card completed": "card"}
              onMouseEnter={() => setIsShown(true)}
              onMouseLeave={() => setIsShown(false)}
              >
-            <input type="checkbox" />
+            <input type="checkbox" onChange={handleChange}/>
             <div>{name}</div>
             {isShown ? <i class="fas fa-times" onClick={handleDeleteClick}></i> : null}
         </div>
