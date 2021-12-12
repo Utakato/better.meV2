@@ -10,7 +10,7 @@ const DarkButton = () => {
     }
     return (
         <div className="dark-mode" onClick={handleClick}>
-            {darkModeState ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+            {darkModeState ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
         </div>
     )
 }

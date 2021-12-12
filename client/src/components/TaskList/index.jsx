@@ -12,7 +12,7 @@ const TaskList = () => {
             {taskList.map(task => {
                 switch (order) {
                     case "all":
-                        return <Task name={task.content} completed={task.completed}/>                        
+                        return <Task name={task.content} completed={task.completed} key={task.content}/>                        
                     case "active": 
                         return !task.completed && <Task name={task.content} completed={task.completed}/>
                     case "completed": 
