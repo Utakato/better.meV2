@@ -6,6 +6,9 @@
     background-color: var(--clr-primary-main);
     padding: 1rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 input {

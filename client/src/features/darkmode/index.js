@@ -1,4 +1,4 @@
-const darkModeReducer = (state=false, action) => {
+const darkModeReducer = (state=true, action) => {
     switch(action.type) {
         case "updateDarkMode": {
             return action.payload
