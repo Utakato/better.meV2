@@ -6,6 +6,7 @@ import * as actions from "../../actions/taskActions"
 const TaskInput = () => {
     const dispatch = useDispatch()
     const [text, setText] = useState('')
+    const [checked, setChecked] = useState(false)
 
     const task = {
 		content: text,
@@ -13,17 +14,31 @@ const TaskInput = () => {
 	}
     const handleEnter = e => {
 		if (e.keyCode === 13 && text !== '') {
+            setChecked(true)
 			dispatch(actions.addTask(task))
 			setText('')
+            setTimeout(() => {setChecked(false)}, 1000)
 		}
 	}
+    const handleCheck = (e) => {
+        if (text) {
+            setChecked(true)
+        }
+        if (e.target.checked && text){
+            dispatch(actions.addTask(task))
+            setText('')
+            setTimeout(() => {setChecked(false)}, 350)
+        }
+
+        
+    }
 
     const handleChange = e => setText(e.target.value)
     return (
         
         <div className="wrapper">
             <div className="task-input">
-                <input type="checkbox"></input>
+                <input type="checkbox" onChange={handleCheck} checked={checked}></input>
                 <input type="text" value={text} onChange={handleChange} onKeyDown={handleEnter} placeholder="Create a new task.." />
             </div>
         </div>
