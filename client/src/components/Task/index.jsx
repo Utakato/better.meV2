@@ -15,7 +15,7 @@ const Task = ({name, completed}) => {
             content: name,
             completed: e.target.checked
         }
-        dispatch(actions.updateTask(task))
+        dispatch(actions.updateTask(task))  
     }
     return (
         <div className={completed ? "card completed": "card"}
