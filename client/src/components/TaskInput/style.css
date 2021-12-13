@@ -1,5 +1,7 @@
 .wrapper {
     width: min(80vw, 512px);
+    box-shadow: 0.2rem 2rem 2rem rgba(0,0,0, 0.1);
+
 
 }
 .task-input {

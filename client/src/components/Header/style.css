@@ -17,3 +17,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+.split i {
+    margin-bottom: 1em;
+}

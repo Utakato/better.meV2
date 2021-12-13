@@ -8,8 +8,10 @@
     color: var(--clr-secondary-text);
     background-color: var(--clr-primary-main);
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 1rem;
+    box-shadow: 0.2rem 2rem 2rem rgba(0,0,0, 0.3);
+
 }
 
 .sort:hover {
