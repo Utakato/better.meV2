@@ -21,7 +21,7 @@ body {
   /* cards */
   --light-gray: hsl(0, 0%, 98%);
   /* bg? */
-  --very-light-gray-bluet: hsl(236, 33%, 92%);
+  --very-light-gray-blue: hsl(236, 33%, 92%);
   /* light secondary text?? */
   --light-gray-blue : hsl(233, 11%, 84%);
   /* secondary text */
@@ -52,7 +52,6 @@ body {
   --clr-primary-bg: var(--very-dark-blue);
   --clr-primary-main: var(--very-dark-des-blue);
   --clr-primary-text: var(--dk-light-gray-blue);
-
   --clr-secondary-text: var(--dk-dark-gray-blue)
 
 }

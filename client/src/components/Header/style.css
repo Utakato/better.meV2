@@ -2,6 +2,9 @@
     background: var(--clr-check);
     padding: 4rem 5%;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -12,7 +15,7 @@ h1 {
 }
 
 .split {
-    width: 512px;
+    width: min(80vw, 512px);
     display: flex;
     justify-content: space-between;
     align-items: center;

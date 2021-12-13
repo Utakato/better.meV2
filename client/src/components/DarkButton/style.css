@@ -3,9 +3,9 @@
 }
 
 .fa-sun {
-    color: var(--clr-primary-100);
+    color: var(--light-gray);
 }
 
 .fa-moon {
-    color: var(--clr-primary-100);
+    color: var(--very-dark-blue);
 }

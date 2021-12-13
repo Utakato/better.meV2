@@ -13,8 +13,9 @@
     gap: 14px;
 }
 
-input {
+input[type=text] {
     background-color: inherit;
     border: none;
     color: var(--clr-secondary-text);
+    width: min(80vw, 512px);
 }
