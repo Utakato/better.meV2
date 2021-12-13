@@ -7,6 +7,7 @@ import { useSelector } from "react-redux"
 const TaskList = () => {
     const taskList = useSelector(state => state.task)
     const order = useSelector(state => state.order)
+    taskList.sort(function(a,b){return b.completed-a.completed})
     return (
         <div className="task-list">
             {taskList.map(task => {
@@ -17,9 +18,8 @@ const TaskList = () => {
                         return !task.completed && <Task name={task.content} completed={task.completed}/>
                     case "completed": 
                         return task.completed && <Task name={task.content} completed={task.completed}/>                
-                    
                     default:
-                        break;
+                        return null;
                 }
             })
             }
