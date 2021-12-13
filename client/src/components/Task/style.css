@@ -3,6 +3,7 @@
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid var(--clr-secondary-text);
 }
 
@@ -36,5 +37,39 @@
 .clickable:hover {
     cursor:pointer;
     color: var(--clr-primary-text)
+}
+
+/* Checkbox Style */
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    position: relative;
+    padding: 9px;
+    border: double 1px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(var(--clr-primary-main), var(--clr-primary-main)), 
+                      linear-gradient(var(--clr-secondary-text), var(--clr-secondary-text));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+input[type=checkbox]:hover {
+    background-image: linear-gradient(var(--clr-primary-main), var(--clr-primary-main)), 
+                      var(--clr-check);
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-image: var(--clr-check), 
+                      var(--clr-check);
+}
+
+input[type=checkbox]:checked:after {
+    content: '\2714';
+	font-size: 12px;
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFF;
 }
 
