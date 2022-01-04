@@ -12,6 +12,7 @@ const TaskInput = () => {
 		content: text,
 		completed: false,
 	}
+
     const handleEnter = e => {
 		if (e.keyCode === 13 && text !== '') {
             setChecked(true)
@@ -20,6 +21,7 @@ const TaskInput = () => {
             setTimeout(() => {setChecked(false)}, 150)
 		}
 	}
+
     const handleCheck = (e) => {
         if (text) {
             setChecked(true)
@@ -28,14 +30,11 @@ const TaskInput = () => {
             dispatch(actions.addTask(task))
             setText('')
             setTimeout(() => {setChecked(false)}, 150)
-        }
-
-        
+        }        
     }
 
     const handleChange = e => setText(e.target.value)
-    return (
-        
+    return (    
         <div className="wrapper">
             <div className="task-input">
                 <input type="checkbox" onChange={handleCheck} checked={checked}></input>
