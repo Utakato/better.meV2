@@ -1,16 +1,16 @@
 const defTaskState = [
     {
-    content: "Test1",
-    completed: false,
-},
-{
-    content: "Test2",
-    completed: false,
-},
-{
-    content: "Test3",
-    completed: false,
-}
+        content: "To create new Task, write it above and check it/press enter",
+        completed: false,
+    },
+    {
+        content: "Check to mark completed",
+        completed: false,
+    },
+    {
+        content: "Press X to clear task",
+        completed: false,
+    },
 ]
 
 const taskReducer = (state=defTaskState, action) => {

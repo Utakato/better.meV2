@@ -11,9 +11,9 @@ const SortOptions = () => {
     return (
         <div className="sort-options">
             <div className="sort-card">
-                <div className={sortState == "all" ? "sort selected" : "sort"} id="all" onClick={handleClick}>All</div>
-                <div className={sortState == "active" ? "sort selected" : "sort"} id="active" onClick={handleClick}>Active</div>
-                <div className={sortState == "completed" ? "sort selected" : "sort"} id="completed" onClick={handleClick}>Completed</div>
+                <div className={sortState === "all" ? "sort selected" : "sort"} id="all" onClick={handleClick}>All</div>
+                <div className={sortState === "active" ? "sort selected" : "sort"} id="active" onClick={handleClick}>Active</div>
+                <div className={sortState === "completed" ? "sort selected" : "sort"} id="completed" onClick={handleClick}>Completed</div>
             </div>
         </div>
     )

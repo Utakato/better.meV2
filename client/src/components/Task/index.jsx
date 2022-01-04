@@ -1,14 +1,18 @@
 import "./style.css"
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import { useDispatch } from "react-redux"
 import * as actions from "../../actions/taskActions"
+
 const Task = ({name, completed}) => {
+    const dispatch = useDispatch()
+    
     const [isShown, setIsShown] = useState(false)
     const [checked, setChecked] = useState(completed)
-    const dispatch = useDispatch()
+    
     const handleDeleteClick = () => {
         dispatch(actions.removeTask(name)) // prob change name to id;
     }
+    
     const handleChange = e => {
         setChecked(!checked)
         let task = {
@@ -17,6 +21,7 @@ const Task = ({name, completed}) => {
         }
         dispatch(actions.updateTask(task))  
     }
+    
     return (
         <div className={completed ? "card completed": "card"}
              onMouseEnter={() => setIsShown(true)}
@@ -24,7 +29,7 @@ const Task = ({name, completed}) => {
              >
             <input type="checkbox" onChange={handleChange} checked={checked}/>
             <div>{name}</div>
-            {isShown ? <i class="fas fa-times" onClick={handleDeleteClick}></i> : null}
+            {isShown ? <i className="fas fa-times" onClick={handleDeleteClick}></i> : null}
         </div>
     )
 }
