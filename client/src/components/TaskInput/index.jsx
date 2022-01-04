@@ -17,7 +17,7 @@ const TaskInput = () => {
             setChecked(true)
 			dispatch(actions.addTask(task))
 			setText('')
-            setTimeout(() => {setChecked(false)}, 1000)
+            setTimeout(() => {setChecked(false)}, 150)
 		}
 	}
     const handleCheck = (e) => {
@@ -27,7 +27,7 @@ const TaskInput = () => {
         if (e.target.checked && text){
             dispatch(actions.addTask(task))
             setText('')
-            setTimeout(() => {setChecked(false)}, 350)
+            setTimeout(() => {setChecked(false)}, 150)
         }
 
         
