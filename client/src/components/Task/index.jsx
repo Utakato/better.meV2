@@ -28,7 +28,7 @@ const Task = ({name, completed}) => {
              onMouseLeave={() => setIsShown(false)}
              >
             <input type="checkbox" onChange={handleChange} checked={checked}/>
-            <div>{name}</div>
+            <div className="break-word" >{name}</div>
             {isShown ? <i className="fas fa-times" onClick={handleDeleteClick}></i> : null}
         </div>
     )

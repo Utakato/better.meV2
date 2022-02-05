@@ -33,12 +33,15 @@ const TaskInput = () => {
         }        
     }
 
-    const handleChange = e => setText(e.target.value)
+    const handleChange = e => {
+
+        setText(e.target.value)
+    }
     return (    
         <div className="wrapper">
             <div className="task-input">
                 <input type="checkbox" onChange={handleCheck} checked={checked}></input>
-                <input type="text" value={text} onChange={handleChange} onKeyDown={handleEnter} placeholder="Create a new task.." />
+                <input maxlength="75" type="text" value={text} onChange={handleChange} onKeyDown={handleEnter} placeholder="Create a new task.." />
             </div>
         </div>
     )

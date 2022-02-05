@@ -43,6 +43,10 @@
     color: var(--clr-primary-text)
 }
 
+.break-word {
+    word-break: break-all;
+}
+
 /* Checkbox Style */
 
 input[type=checkbox] {
