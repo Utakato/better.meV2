@@ -37,7 +37,8 @@
     color: var(--clr-secondary-text);
 }
 
-.clickable:hover {
+.clickable:hover,
+.clickable:active {
     cursor:pointer;
     color: var(--clr-primary-text)
 }
@@ -56,7 +57,8 @@ input[type=checkbox] {
     background-clip: padding-box, border-box;
 }
 
-input[type=checkbox]:hover {
+input[type=checkbox]:hover,
+input[type=checkbox]:active {
     background-image: linear-gradient(var(--clr-primary-main), var(--clr-primary-main)), 
                       var(--clr-check);
     cursor: pointer;

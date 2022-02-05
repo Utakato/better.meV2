@@ -14,7 +14,8 @@
 
 }
 
-.sort:hover {
+.sort:hover,
+.sort:active {
     color: var(--clr-primary-text);
     cursor:pointer;
 }
