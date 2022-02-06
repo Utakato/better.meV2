@@ -21,15 +21,21 @@ const Task = ({name, completed}) => {
         }
         dispatch(actions.updateTask(task))  
     }
+
+
     
     return (
         <div className={completed ? "card completed": "card"}
-             onMouseEnter={() => setIsShown(true)}
-             onMouseLeave={() => setIsShown(false)}
+            //  onMouseEnter={() => setIsShown(true)}
+            //  onMouseLeave={() => setIsShown(false)}
+            //  onTouchStart={() => setIsShown(true)}
+            //  onTouchCancel={() => setIsShown(false)}
              >
             <input type="checkbox" onChange={handleChange} checked={checked}/>
             <div className="break-word" >{name}</div>
-            {isShown ? <i className="fas fa-times" onClick={handleDeleteClick}></i> : null}
+            {/* {isShown ? 
+             : null} */}
+            <i className="fas fa-times disabled" onClick={handleDeleteClick}></i>
         </div>
     )
 }

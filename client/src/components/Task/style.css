@@ -44,7 +44,16 @@
 }
 
 .break-word {
-    word-break: break-all;
+    word-break: break-word;
+}
+
+.disabled {
+    opacity:0;
+}
+
+.card:hover .disabled,
+.card:active .disabled{
+    opacity: 1;
 }
 
 /* Checkbox Style */
